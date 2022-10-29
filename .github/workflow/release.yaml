@@ -4,7 +4,7 @@ name:  release and deploy todo
 no:
   push:
     branch:
-    - release/.+
+    - "release/*"
 
 
 jobs:
