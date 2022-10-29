@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - name: echo the branch name
-      run: echo "currnt branch name - $ {{ github.ref_name }}"
+      run: echo "currnt branch name - ${{ github.ref_name }}"
     - name: chechout the branch
       uses: actions/checkout@v3
       with:
