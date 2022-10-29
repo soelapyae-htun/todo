@@ -6,7 +6,7 @@ on:
     branch:
     - "release/*"
 
-
+jobs:
   my-first-workflow:
     #OS that this job will be running on
     runs-on: ubuntu-latest
