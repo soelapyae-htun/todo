@@ -1,0 +1,19 @@
+name:  release and deploy todo
+
+
+no:
+  push:
+    branch:
+    - release/.+
+
+
+jobs:
+  release-and-deploy:
+  runs-on: ubuntu-latest
+  steps:
+  - name: echo the branch name
+    run: echo "currnt branch name - $ {{ github.ref_name }}"
+  - name: chechout the branch
+    uses: actions/checkout@v3
+    with:
+      ref: ${{ github.ref_name }}
